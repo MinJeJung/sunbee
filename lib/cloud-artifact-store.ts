@@ -134,6 +134,7 @@ export class VercelBlobArtifactStore implements CloudArtifactStore {
       allowedContentTypes: [contentType],
       maximumSizeInBytes,
       allowOverwrite: true,
+      addRandomSuffix: false,
     });
     return { artifactId: blobArtifactId(objectName), uploadUrl: presignedUrl, contentType };
   }
