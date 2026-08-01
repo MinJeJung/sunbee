@@ -40,6 +40,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .page-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; margin-bottom: 30px; }
 .page-heading h1, .request-heading h1, .book-hero h1 { margin: 0; letter-spacing: -.055em; line-height: 1.08; }
 .page-heading h1 { font-size: clamp(32px, 4vw, 48px); }
+.dashboard-heading h1 { word-break: keep-all; }
 .page-heading p:not(.eyebrow) { margin: 12px 0 0; color: var(--muted); }
 .heading-actions { display: flex; align-items: center; gap: 8px; }
 .button { min-height: 44px; border: 1px solid transparent; border-radius: 7px; padding: 10px 15px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-weight: 750; cursor: pointer; white-space: nowrap; }
