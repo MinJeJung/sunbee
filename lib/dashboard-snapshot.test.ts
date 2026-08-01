@@ -81,6 +81,7 @@ describe("대시보드 V2 스냅샷", () => {
       sales,
       generatedAt: "2026-07-19T10:00:00.000Z",
       buildVersion: "0.3.1",
+      execution: "codex-cloud",
     });
 
     expect(snapshot.operations[0]).toMatchObject({
@@ -91,6 +92,12 @@ describe("대시보드 V2 스냅샷", () => {
       productionJobState: null,
       progress: null,
       reviewArtifact: null,
+    });
+    expect(snapshot.execution).toBe("codex-cloud");
+    expect(snapshot.sources.find((source) => source.source === "production-bridge")).toMatchObject({
+      state: "fresh",
+      rowCount: 0,
+      errorCode: null,
     });
   });
 });

@@ -12,6 +12,7 @@ type SnapshotInput = {
   readonly sales: SalesHistory;
   readonly generatedAt: string;
   readonly buildVersion: string;
+  readonly execution?: "local" | "codex-cloud";
   readonly progress?: Readonly<Record<string, BuildProgress>>;
   readonly bridge?: BridgeHealth | null;
 };
@@ -22,6 +23,7 @@ export function buildDashboardSnapshot(input: SnapshotInput): DashboardSnapshotV
   return {
     version: 2,
     scope: "ai",
+    execution: input.execution ?? "local",
     generatedAt: input.generatedAt,
     buildVersion: input.buildVersion,
     catalogVersion: `${input.catalog.generatedAt}:${input.books.length}`,
@@ -97,6 +99,20 @@ function buildSources(input: SnapshotInput): readonly SourceStatus[] {
 // 판별하는 유일한 화면 신호다. dead여도 제작 중 작업이 없으면 stale로 낮춰
 // 불필요한 빨간 경보를 피한다.
 function bridgeSourceStatus(input: SnapshotInput): SourceStatus {
+  if (input.execution === "codex-cloud") {
+    const runningJobs = input.state.jobs.filter((job) =>
+      job.status === "claimed" && ["topic_insight", "book_build"].includes(job.type)).length;
+    return {
+      source: "production-bridge",
+      state: "fresh",
+      observedAt: input.generatedAt,
+      attemptedAt: input.generatedAt,
+      lastSuccessAt: input.generatedAt,
+      effectiveDate: input.generatedAt.slice(0, 10),
+      rowCount: runningJobs,
+      errorCode: null,
+    };
+  }
   const bridge = input.bridge ?? null;
   const nowMs = Date.parse(input.generatedAt);
   const health = classifyBridgeHealth(bridge, Number.isNaN(nowMs) ? undefined : nowMs);

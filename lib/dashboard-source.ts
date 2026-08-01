@@ -6,7 +6,7 @@ import { readBuildProgressMap } from "@/lib/build-progress";
 import { buildDashboardSnapshot } from "@/lib/dashboard-snapshot";
 import { readLiveCatalog } from "@/lib/live-catalog";
 import { loadSalesHistory, salesDataRoot, todayInKst } from "@/lib/sales-source";
-import { readState } from "@/lib/store";
+import { readState, usesCloudStore } from "@/lib/store";
 
 export const DASHBOARD_BUILD_VERSION = "0.3.2";
 
@@ -30,6 +30,7 @@ export async function loadDashboardSnapshot() {
     sales: salesResult.history,
     generatedAt,
     buildVersion: DASHBOARD_BUILD_VERSION,
+    execution: usesCloudStore() ? "codex-cloud" : "local",
     progress,
     bridge,
   });

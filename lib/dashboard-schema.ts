@@ -57,6 +57,7 @@ export type DashboardMetrics = {
 export type DashboardSnapshotV2 = {
   readonly version: 2;
   readonly scope: "ai";
+  readonly execution: "local" | "codex-cloud";
   readonly generatedAt: string;
   readonly buildVersion: string;
   readonly catalogVersion: string;
@@ -81,6 +82,7 @@ const sourceStatusSchema = z.object({
 export const dashboardSnapshotSchema = z.object({
   version: z.literal(2),
   scope: z.literal("ai"),
+  execution: z.enum(["local", "codex-cloud"]),
   generatedAt: z.string(),
   buildVersion: z.string(),
   catalogVersion: z.string(),

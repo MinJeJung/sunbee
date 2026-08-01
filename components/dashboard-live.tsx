@@ -62,14 +62,22 @@ export function DashboardLive({ initialCatalog, initialSnapshot, planApproval }:
 }
 
 function SourceStatusPanel({ snapshot }: { snapshot: DashboardSnapshotV2 }) {
-  const labels = { "local-state": "로컬 제작", "production-bridge": "제작 엔진", "kyobo-catalog": "교보 원장", "five-platform-catalog": "5사 원장", sales: "매출" };
+  const labels = {
+    "local-state": snapshot.execution === "codex-cloud" ? "클라우드 상태" : "로컬 제작",
+    "production-bridge": snapshot.execution === "codex-cloud" ? "Codex Cloud" : "제작 엔진",
+    "kyobo-catalog": "교보 원장",
+    "five-platform-catalog": "5사 원장",
+    sales: "매출",
+  };
   const states = { fresh: "정상", stale: "지연", fallback: "대체값", failed: "수집 실패" };
   // 제작 엔진은 원장류와 어휘가 다르다 — "수집 실패"가 아니라 "중단됨"으로 읽혀야 한다.
   const bridgeStates = { fresh: "가동 중", stale: "신호 지연", fallback: "대체값", failed: "중단됨" };
   return <section className="source-status-grid" aria-label="데이터 출처 상태">{snapshot.sources.map((source) => <article className={`source-status source-${source.state}`} key={source.source}>
     <div><strong>{labels[source.source]}</strong><span>{(source.source === "production-bridge" ? bridgeStates : states)[source.state]}</span></div>
     {source.source === "production-bridge"
-      ? <small>{source.state === "failed" ? "heartbeat 끊김" : `실행 중 ${source.rowCount ?? 0}건`} · 최근 신호 {formatSignalTime(source.observedAt)}</small>
+      ? <small>{snapshot.execution === "codex-cloud"
+        ? `실행 중 ${source.rowCount ?? 0}건 · 클라우드 연결`
+        : `${source.state === "failed" ? "heartbeat 끊김" : `실행 중 ${source.rowCount ?? 0}건`} · 최근 신호 ${formatSignalTime(source.observedAt)}`}</small>
       : <small>기준일 {source.effectiveDate ?? "확인 불가"}</small>}
     {source.state === "fallback" ? <small>수집 시도 {source.attemptedAt?.slice(0, 10) ?? "확인 불가"}</small> : null}
   </article>)}</section>;
