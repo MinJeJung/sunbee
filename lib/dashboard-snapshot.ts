@@ -72,6 +72,8 @@ export function buildDashboardSnapshot(input: SnapshotInput): DashboardSnapshotV
           characterCount: operation.artifact.characterCount,
           factCheckScore: operation.artifact.factCheckScore,
           epubCheckScore: operation.artifact.epubCheckScore,
+          betaReadScore: operation.artifact.betaReadScore ?? null,
+          betaReadSummary: operation.artifact.betaReadSummary ?? null,
         } : null,
       };
     }),

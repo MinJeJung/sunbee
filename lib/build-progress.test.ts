@@ -46,6 +46,20 @@ describe("build progress reader", () => {
     expect(progress).toMatchObject({ percent: 99, label: "메타·최종 검증" });
   });
 
+  it("maps the beta_read stage to its label", async () => {
+    // Given — 베타리딩 단계(epub 93과 final_meta 97 사이)
+    await writeFile(path.join(directory, "op-3.jsonl"), [
+      '{"stage":"epub","percent":93}',
+      '{"stage":"beta_read","percent":95,"note":"별점 4.0"}',
+    ].join("\n"), "utf8");
+
+    // When
+    const progress = await readBuildProgress("op-3", directory);
+
+    // Then
+    expect(progress).toMatchObject({ percent: 95, label: "베타리딩", note: "별점 4.0" });
+  });
+
   it("returns null when no progress file exists", async () => {
     expect(await readBuildProgress("missing-op", directory)).toBeNull();
   });

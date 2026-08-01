@@ -16,6 +16,7 @@ export const BUILD_STAGES = [
   { stage: "quality_gate", percent: 78, label: "품질 게이트" },
   { stage: "cover", percent: 86, label: "표지 제작" },
   { stage: "epub", percent: 93, label: "EPUB 빌드" },
+  { stage: "beta_read", percent: 95, label: "베타리딩" },
   { stage: "final_meta", percent: 97, label: "메타·최종 검증" },
 ] as const;
 

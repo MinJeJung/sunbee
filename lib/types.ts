@@ -20,6 +20,8 @@ export interface ProducedArtifact {
   characterCount: number;
   factCheckScore: number;
   epubCheckScore: number;
+  betaReadScore?: number | undefined;
+  betaReadSummary?: string | undefined;
 }
 
 export interface IsbnWorkflowResult {

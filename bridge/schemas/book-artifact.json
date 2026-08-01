@@ -2,14 +2,52 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
   "additionalProperties": false,
-  "required": ["title", "coverArtifactId", "epubArtifactId", "fingerprint", "characterCount", "factCheckScore", "epubCheckScore"],
+  "required": [
+    "title",
+    "coverArtifactId",
+    "epubArtifactId",
+    "fingerprint",
+    "characterCount",
+    "factCheckScore",
+    "epubCheckScore"
+  ],
   "properties": {
-    "title": { "type": "string" },
-    "coverArtifactId": { "type": "string" },
-    "epubArtifactId": { "type": "string" },
-    "fingerprint": { "type": "string" },
-    "characterCount": { "type": "integer", "minimum": 0 },
-    "factCheckScore": { "type": "number", "minimum": 0, "maximum": 100 },
-    "epubCheckScore": { "type": "number", "minimum": 0, "maximum": 100 }
+    "title": {
+      "type": "string"
+    },
+    "coverArtifactId": {
+      "type": "string"
+    },
+    "epubArtifactId": {
+      "type": "string"
+    },
+    "fingerprint": {
+      "type": "string"
+    },
+    "characterCount": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "factCheckScore": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "epubCheckScore": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "betaReadScore": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5,
+      "description": "타깃 독자 페르소나 베타리더 별점 (0~5, 0.5 단위 권장)"
+    },
+    "betaReadSummary": {
+      "type": "string",
+      "maxLength": 400,
+      "description": "베타리더 요약: 가치 지점·이탈 위험 각 1~2개 한 줄씩"
+    }
   }
 }

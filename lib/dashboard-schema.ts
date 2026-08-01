@@ -37,6 +37,8 @@ export type DashboardOperation = {
     readonly characterCount: number;
     readonly factCheckScore: number;
     readonly epubCheckScore: number;
+    readonly betaReadScore: number | null;
+    readonly betaReadSummary: string | null;
   } | null;
 };
 
@@ -134,6 +136,8 @@ export const dashboardSnapshotSchema = z.object({
       characterCount: z.number(),
       factCheckScore: z.number(),
       epubCheckScore: z.number(),
+      betaReadScore: z.number().nullable().optional().transform((value) => value ?? null),
+      betaReadSummary: z.string().nullable().optional().transform((value) => value ?? null),
     }).nullable(),
   })),
 });

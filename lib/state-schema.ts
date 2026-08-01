@@ -23,6 +23,8 @@ const artifactSchema = z.object({
   characterCount: z.number(),
   factCheckScore: z.number(),
   epubCheckScore: z.number(),
+  betaReadScore: z.number().optional(),
+  betaReadSummary: z.string().optional(),
 });
 
 const revisionAttachmentSchema = z.object({

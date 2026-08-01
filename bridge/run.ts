@@ -36,6 +36,7 @@ const artifactSchema = z.object({
   title: z.string().min(2), coverArtifactId: z.string().min(1), epubArtifactId: z.string().min(1),
   fingerprint: z.string().min(8), characterCount: z.number().int().nonnegative(),
   factCheckScore: z.number().min(0).max(100), epubCheckScore: z.number().min(0).max(100),
+  betaReadScore: z.number().min(0).max(5).optional(), betaReadSummary: z.string().max(400).optional(),
 }).strict();
 const claimedSchema = z.object({
   job: z.custom<Job>(),
@@ -193,7 +194,7 @@ ${resources}
 }
 
 // lib/build-progress.ts의 BUILD_STAGES와 1:1 — 단계·percent를 바꾸면 양쪽 모두 수정할 것.
-const PROGRESS_STAGE_SPEC = "research=8, outline=15, chapter1=24, chapter2=33, chapter3=42, chapter4=51, chapter5=60, fact_check=70, quality_gate=78, cover=86, epub=93, final_meta=97";
+const PROGRESS_STAGE_SPEC = "research=8, outline=15, chapter1=24, chapter2=33, chapter3=42, chapter4=51, chapter5=60, fact_check=70, quality_gate=78, cover=86, epub=93, beta_read=95, final_meta=97";
 
 async function resetProgressFile(operationId: string) {
   const progressFile = path.join(PROJECT_ROOT, "data", "progress", `${operationId}.jsonl`);
