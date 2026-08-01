@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "선비북스 전자책 대시보드",
-    short_name: "선비북스 전자책",
+    name: "선비북스 클라우드 대시보드",
+    short_name: "선비북스 클라우드",
     description: "전자책 제작·검수·유통 대시보드",
     start_url: "/dashboard",
     display: "standalone",

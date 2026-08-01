@@ -10,7 +10,7 @@ export default async function LoginPage({ searchParams }: { searchParams: Promis
   return <main className="login-page">
     <section className="login-card">
       <Logo />
-      <div className="login-copy"><p className="eyebrow">OWNER ACCESS</p><h1>선비북스 전자책<br />대시보드</h1><p>교보문고 현재 판매 원장과 5사 판매 현황, 표지·원고·전자책 원본을 확인합니다.</p></div>
+      <div className="login-copy"><p className="eyebrow">CLOUD OWNER ACCESS</p><h1>선비북스 클라우드<br />대시보드</h1><p>교보문고 현재 판매 원장과 5사 판매 현황, 표지·원고·전자책 원본을 확인합니다.</p></div>
       <form action={loginAction} className="login-form">
         <input autoComplete="username" name="username" readOnly type="hidden" value="owner" />
         <label htmlFor="password">대시보드 암호</label>

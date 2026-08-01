@@ -26,7 +26,7 @@ export default async function DashboardPage() {
   const initialCatalog: CatalogPage = { scope: "ai", items: [], total: snapshot.metrics.productCount, page: 1, pageSize: 50, totalPages: Math.ceil(snapshot.metrics.productCount / 50) };
   const hermes = await readHermesManagerSnapshot({ state, distributionAttention: snapshot.metrics.actionRequired });
   return <AppShell>
-    <div className="page-heading dashboard-heading"><div><p className="eyebrow">SUNBEE BOOKS CONTROL</p><h1>선비북스 전자책 대시보드</h1><p>AI 도서를 기본 범위로 제작·ISBN·5사 유통·매출 기준일을 함께 확인합니다.</p></div><div className="heading-actions"><Link className="button secondary" href="/requests/bulk"><Files size={17} /> 대량 작업</Link><Link className="button primary" href="/requests/new">새 책 시작 <ArrowRight size={17} /></Link></div></div>
+    <div className="page-heading dashboard-heading"><div><p className="eyebrow">SUNBEE BOOKS CLOUD</p><h1>선비북스 클라우드 대시보드</h1><p>AI 도서를 기본 범위로 제작·ISBN·5사 유통·매출 기준일을 함께 확인합니다.</p></div><div className="heading-actions"><Link className="button secondary" href="/requests/bulk"><Files size={17} /> 대량 작업</Link><Link className="button primary" href="/requests/new">새 책 시작 <ArrowRight size={17} /></Link></div></div>
     <DashboardLive initialCatalog={initialCatalog} initialSnapshot={snapshot} planApproval={<PlanApprovalQueue operations={state.operations} />} />
     <IsbnHealthStrip health={isbnHealth} />
     <HermesManager snapshot={hermes} />
