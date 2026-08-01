@@ -6,12 +6,16 @@ import { StateWriteConflictError } from "@/lib/gcs-state-store";
 
 const statePathname = "state/dashboard.json";
 
+export function strongBlobEtag(etag: string): string {
+  return etag.startsWith("W/") ? etag.slice(2) : etag;
+}
+
 export class VercelBlobStateObjectStore implements VersionedStateObjectStore {
   async read(): Promise<StateObject | null> {
     try {
       const result = await get(statePathname, { access: "private", useCache: false });
       if (!result || result.statusCode !== 200) return null;
-      return { body: await new Response(result.stream).text(), generation: result.blob.etag };
+      return { body: await new Response(result.stream).text(), generation: strongBlobEtag(result.blob.etag) };
     } catch (error) {
       if (error instanceof BlobNotFoundError) return null;
       throw error;
