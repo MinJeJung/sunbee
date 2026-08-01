@@ -8,6 +8,7 @@ import type { DashboardState, Job, Operation, OperationStatus } from "@/lib/type
 // 브리지가 타입별 동시성 한도에 맞춰 가져갈 작업 유형을 지정한다 (본문 없으면 전체 허용).
 const claimBodySchema = z.object({
   types: z.array(z.enum(["topic_insight", "book_build", "review_email", "isbn", "distribution"])).min(1).max(5).optional(),
+  executor: z.literal("codex_cloud").optional(),
 }).strict();
 
 export const runtime = "nodejs";
@@ -39,7 +40,12 @@ function expireStaleClaims(jobs: Job[], operations: Operation[], now: string) {
   });
 }
 
-function failureReason(job: Job, operation: Operation | undefined, state: DashboardState) {
+function failureReason(
+  job: Job,
+  operation: Operation | undefined,
+  state: DashboardState,
+  allowConcurrentBatchBuild: boolean,
+) {
   if (!operation) return "연결된 제작 요청을 찾을 수 없습니다.";
 
   const otherClaimed = state.jobs.some(
@@ -51,7 +57,7 @@ function failureReason(job: Job, operation: Operation | undefined, state: Dashbo
     return "주제 인사이트가 없어 책 제작을 시작할 수 없습니다.";
   }
   if (job.type === "book_build" && operation.batchId) {
-    if (hasActiveBatchBuild(state, operation.id, job.id)) return null;
+    if (hasActiveBatchBuild(state, operation.id, job.id, allowConcurrentBatchBuild)) return null;
   }
 
   if (job.type === "review_email") {
@@ -101,9 +107,13 @@ export async function POST(request: Request) {
   }
 
   let requestedTypes: Set<Job["type"]> | null = null;
+  let allowConcurrentBatchBuild = false;
   try {
     const parsed = claimBodySchema.safeParse(await request.json());
-    if (parsed.success && parsed.data.types) requestedTypes = new Set(parsed.data.types);
+    if (parsed.success) {
+      if (parsed.data.types) requestedTypes = new Set(parsed.data.types);
+      allowConcurrentBatchBuild = parsed.data.executor === "codex_cloud";
+    }
   } catch {
     // 본문 없는 기존 호출과의 호환 — 전체 유형 허용
   }
@@ -122,7 +132,7 @@ export async function POST(request: Request) {
       const jobIndex = jobs.findIndex((job) => job.id === candidate.id);
       const operationIndex = operations.findIndex((operation) => operation.id === candidate.operationId);
       const operation = operationIndex >= 0 ? operations[operationIndex] : undefined;
-      const reason = failureReason(candidate, operation, { ...state, jobs, operations });
+      const reason = failureReason(candidate, operation, { ...state, jobs, operations }, allowConcurrentBatchBuild);
 
       if (reason === null) continue;
 

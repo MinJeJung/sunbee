@@ -45,5 +45,6 @@ describe("기획 승인 흐름", () => {
       { id: "job-second", operationId: "second", type: "book_build", status: "queued", createdAt: "2026-08-01T00:00:01.000Z", updatedAt: "2026-08-01T00:00:01.000Z" },
     ] };
     expect(hasActiveBatchBuild(state, "second", "job-second")).toBe(true);
+    expect(hasActiveBatchBuild(state, "second", "job-second", true)).toBe(false);
   });
 });

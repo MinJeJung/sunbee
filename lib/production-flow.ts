@@ -1,6 +1,12 @@
 import type { DashboardState, Job, TopicInsight } from "@/lib/types";
 
-export function hasActiveBatchBuild(state: DashboardState, operationId: string, jobId: string): boolean {
+export function hasActiveBatchBuild(
+  state: DashboardState,
+  operationId: string,
+  jobId: string,
+  allowConcurrentBatchBuild = false,
+): boolean {
+  if (allowConcurrentBatchBuild) return false;
   const batchId = state.operations.find((operation) => operation.id === operationId)?.batchId;
   if (!batchId) return false;
   return state.jobs.some((job) => {

@@ -43,7 +43,7 @@ async function submitCloudTask(prompt: string): Promise<string> {
 async function claimProductionJob(): Promise<CloudDispatchPacket | null> {
   const claimResponse = await ky.post(`${dashboardUrl}/api/bridge/jobs/claim`, {
     headers: bridgeHeaders(),
-    json: { types: ["topic_insight", "book_build"] },
+    json: { types: ["topic_insight", "book_build"], executor: "codex_cloud" },
     throwHttpErrors: false,
     timeout: 30_000,
   });
