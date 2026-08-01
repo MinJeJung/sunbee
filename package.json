@@ -11,6 +11,7 @@
     "test": "vitest run",
     "bridge": "tsx bridge/run.ts",
     "cloud:dispatch": "tsx scripts/cloud-dispatch.ts",
+    "cloud:pull": "tsx scripts/cloud-pull.ts",
     "cloud:seed": "tsx scripts/seed-cloud-batch.ts"
   },
   "dependencies": {
