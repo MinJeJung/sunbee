@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-07-18T22:50:30+09:00",
+  "kyoboProductCount": 242,
+  "uniqueBookCount": 184,
+  "formatCounts": {
+    "EPUB": 107,
+    "PDF": 135
+  },
+  "assetMatchMethods": {
+    "isbn": 235,
+    "title": 7
+  },
+  "fivePlatformMatchMethods": {
+    "isbn": 218,
+    "fallback_catalog": 22,
+    "title+format": 2
+  },
+  "platformCounts": {
+    "kyobo": {
+      "유통중": 242
+    },
+    "yes24": {
+      "유통중": 70,
+      "보완필요": 1,
+      "중지": 10,
+      "등록": 160,
+      "미등록": 1
+    },
+    "ridi": {
+      "등록": 240,
+      "미등록": 2
+    },
+    "aladin": {
+      "유통중": 44,
+      "등록": 197,
+      "미등록": 1
+    },
+    "millie": {
+      "심사중": 161,
+      "반려": 70,
+      "유통중": 9,
+      "등록": 2
+    }
+  },
+  "allFiveRegistered": 240,
+  "missingAnyPlatform": 2,
+  "booksWithCover": 242,
+  "booksWithManuscript": 242,
+  "booksWithOriginalFile": 242
+}

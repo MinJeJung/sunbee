@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["recommendedTitle", "targetReader", "readerPromise", "keyInsights", "chapterDirections", "sourceNotes", "bookType", "recommendedCharacters", "promiseChecklist", "readerAssets", "differentiation"],
+  "properties": {
+    "recommendedTitle": { "type": "string" },
+    "targetReader": { "type": "string" },
+    "readerPromise": { "type": "string" },
+    "keyInsights": { "type": "array", "minItems": 1, "maxItems": 20, "items": { "type": "string" } },
+    "chapterDirections": { "type": "array", "minItems": 3, "maxItems": 20, "items": { "type": "string" } },
+    "bookType": { "type": "string", "enum": ["quick", "standard", "deep"] },
+    "recommendedCharacters": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min", "max"],
+      "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } }
+    },
+    "promiseChecklist": { "type": "array", "minItems": 1, "maxItems": 20, "items": { "type": "string" } },
+    "readerAssets": { "type": "array", "minItems": 1, "maxItems": 20, "items": { "type": "string" } },
+    "differentiation": { "type": "string" },
+    "sourceNotes": {
+      "type": "array",
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["url", "insight"],
+        "properties": { "url": { "type": "string" }, "insight": { "type": "string" } }
+      }
+    }
+  }
+}

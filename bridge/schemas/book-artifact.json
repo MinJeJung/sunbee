@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "coverArtifactId", "epubArtifactId", "fingerprint", "characterCount", "factCheckScore", "epubCheckScore"],
+  "properties": {
+    "title": { "type": "string" },
+    "coverArtifactId": { "type": "string" },
+    "epubArtifactId": { "type": "string" },
+    "fingerprint": { "type": "string" },
+    "characterCount": { "type": "integer", "minimum": 0 },
+    "factCheckScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "epubCheckScore": { "type": "number", "minimum": 0, "maximum": 100 }
+  }
+}

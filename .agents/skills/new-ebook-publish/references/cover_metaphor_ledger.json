@@ -1,0 +1,624 @@
+{
+  "entries": [
+    {
+      "title": "비전공자를 위한 생성형 AI 코딩 용어 사전",
+      "topic": "생성형 AI 코딩 비전공자 용어집",
+      "metaphor": "folded checklist",
+      "element": "folded paper checklist",
+      "palette": "crisp white, black, signal red",
+      "layout": "centered object with wide margin",
+      "recorded_at": "2026-06-22T22:31:24",
+      "status": "recorded"
+    },
+    {
+      "title": "생성형 AI로 시작하는 1인 지식창업 실행 가이드",
+      "topic": "solo_knowledge_business",
+      "metaphor": "modular blocks",
+      "element": "stacked colored blocks",
+      "palette": "deep green, ivory, orange",
+      "layout": "bottom-weighted editorial grid",
+      "recorded_at": "2026-06-28T20:57:59",
+      "status": "recorded"
+    },
+    {
+      "title": "AI 안경과 실시간 보조 도구로 만드는 학습·업무 루틴",
+      "topic": "AI 웨어러블과 실시간 보조 도구를 학습·업무 루틴에 적용",
+      "metaphor": "marked calendar",
+      "element": "desk calendar with one marked day",
+      "palette": "charcoal, warm yellow, cyan",
+      "layout": "large title top, object lower third",
+      "recorded_at": "2026-06-28T21:47:25",
+      "status": "recorded"
+    },
+    {
+      "title": "비개발자를 위한 노코드 개인 업무 비서",
+      "topic": "비개발자가 유지보수 가능한 노코드 개인 업무 비서",
+      "metaphor": "switch panel",
+      "element": "single toggle switch panel",
+      "palette": "navy, white, lime",
+      "layout": "left title block, right object",
+      "recorded_at": "2026-06-28T22:14:05",
+      "status": "recorded"
+    },
+    {
+      "title": "작은 회사 비즈니스 자동화 운영 매뉴얼",
+      "topic": "작은 회사 운영 매뉴얼화와 반자동화",
+      "metaphor": "bridge diagram",
+      "element": "minimal bridge line drawing",
+      "palette": "teal, black, pale gray",
+      "layout": "horizontal axis layout",
+      "recorded_at": "2026-06-29T02:04:56",
+      "status": "recorded"
+    },
+    {
+      "title": "ChatGPT와 노코드로 만드는 보고서 자동화",
+      "topic": "보고서 자동화 검토 기준 노코드",
+      "metaphor": "sealed document",
+      "element": "document with simple shield seal",
+      "palette": "crimson, cream, graphite",
+      "layout": "premium centered typography",
+      "recorded_at": "2026-06-29T02:48:11",
+      "status": "recorded"
+    },
+    {
+      "title": "직장인을 위한 ChatGPT 반복 업무 자동화",
+      "topic": "직장인의 하루 업무 루틴 단위 반복 업무 자동화",
+      "metaphor": "tool tray",
+      "element": "organized desktop tool tray",
+      "palette": "royal blue, white, orange",
+      "layout": "object-led flat lay",
+      "recorded_at": "2026-06-29T03:20:13",
+      "status": "recorded"
+    },
+    {
+      "title": "온라인 판매자를 위한 AI 커머스 운영 자동화",
+      "topic": "온라인 판매자와 쇼핑몰 운영자를 위한 AI 커머스 운영 자동화",
+      "metaphor": "window stack",
+      "element": "overlapping clean app windows",
+      "palette": "purple, mint, black",
+      "layout": "diagonal layered composition",
+      "recorded_at": "2026-06-29T04:34:38",
+      "status": "recorded"
+    },
+    {
+      "title": "1인 크리에이터를 위한 AI 뉴스레터 운영 시스템",
+      "topic": "혼자 운영하는 크리에이터의 AI 뉴스레터 운영 시스템",
+      "metaphor": "newsletter operating desk as layered paper system",
+      "element": "stacked newsletter cards and analytics line",
+      "palette": "deep green, cream paper, muted gold",
+      "layout": "premium hardcover portrait with title area upper-left and paper system lower-right",
+      "recorded_at": "2026-06-29T10:33:08",
+      "status": "recorded"
+    },
+    {
+      "title": "네이버 블로그와 SNS를 잇는 AI 콘텐츠 재활용 시스템",
+      "topic": "블로그 장문 콘텐츠를 SNS 카드 뉴스레터 숏폼으로 재활용하는 AI 콘텐츠 운영 시스템",
+      "metaphor": "blog article branching into multi-channel content cards",
+      "element": "long-form blog sheet connected to social cards newsletter and short-form video card",
+      "palette": "midnight teal, ivory paper, copper gold",
+      "layout": "premium hardcover portrait with title upper-left and content pipeline lower-right",
+      "recorded_at": "2026-06-29T10:38:02",
+      "status": "recorded"
+    },
+    {
+      "title": "교사와 교육 담당자를 위한 생성형 AI 수업 운영 가이드",
+      "topic": "교실 수업 설계, 평가, 학습자료, 수업 운영을 위한 생성형 AI 활용",
+      "metaphor": "route map",
+      "element": "classroom operations route map with three checkpoints, lesson-plan board and rubric sheets",
+      "palette": "deep forest green, warm cream, muted gold, sky blue accents",
+      "layout": "large typography upper-left, tactile route-map paper objects lower-right",
+      "recorded_at": "2026-06-29T11:22:15",
+      "status": "recorded"
+    },
+    {
+      "title": "사무직을 위한 ChatGPT 엑셀·구글시트 자동화",
+      "topic": "사무직의 스프레드시트 정리, 검수, 보고 자동화",
+      "metaphor": "spreadsheet control board",
+      "element": "cream spreadsheet sheet with checklist and gold automation sliders",
+      "palette": "deep emerald black, warm cream, muted gold, cyan verification accent",
+      "layout": "large typography upper-left, tactile spreadsheet control object lower-right",
+      "recorded_at": "2026-06-29T12:20:05",
+      "status": "recorded"
+    },
+    {
+      "title": "기획자를 위한 AI 뉴스·자료 브리프 자동화",
+      "topic": "뉴스 보고서 유튜브 경쟁사 자료를 의사결정 브리프로 바꾸는 자동화 시스템",
+      "metaphor": "briefing desk",
+      "element": "layered report cards, news clipping sheet and decision pin",
+      "palette": "deep ink navy, warm ivory, muted gold, coral and teal tabs",
+      "layout": "large typography upper-left, tactile briefing cards lower-right",
+      "recorded_at": "2026-06-30T07:30:34",
+      "status": "recorded"
+    },
+    {
+      "title": "1인 사업자를 위한 AI 자동화",
+      "topic": "AI 업무 자동화",
+      "metaphor": "cascading paper documents with gold connector",
+      "element": "three cream paper sheets fanned with gold polyline nodes and ribbon",
+      "palette": "deep navy, cream, gold",
+      "layout": "large title top, object cluster lower half",
+      "recorded_at": "2026-07-04T11:06:08",
+      "status": "recorded"
+    },
+    {
+      "title": "정부지원사업을 위한 AI 사업계획서 작성 루틴",
+      "topic": "정부지원사업 공고 분석, PSST 사업계획서 작성, 심사 대응, 탈락 후 재도전 루틴",
+      "metaphor": "growth ring",
+      "element": "tree growth rings cross-section",
+      "palette": "walnut brown, sage, ivory",
+      "layout": "full-bleed texture with title plate",
+      "recorded_at": "2026-07-04T12:38:18",
+      "status": "reserved"
+    },
+    {
+      "title": "작은 영업팀을 위한 AI 리드·CRM 관리 루틴",
+      "topic": "소규모 B2B 팀의 리드 파이프라인 시스템 구축: CRM 도입, AI 리드 스코어링, 후속 자동화, 주간 리뷰, 놓친 리드 회수",
+      "metaphor": "gear pair",
+      "element": "two meshing flat gears",
+      "palette": "steel blue, rust, ivory",
+      "layout": "mechanical detail upper half",
+      "recorded_at": "2026-07-04T12:39:35",
+      "status": "reserved"
+    },
+    {
+      "title": "1인 사업자를 위한 AI 매출·비용 정산 루틴",
+      "topic": "여러 판매 채널의 매출과 흩어진 비용 증빙을 매주 15분 루틴으로 모아 월별 손익을 파악하고 의사결정하는 AI 정산 시스템",
+      "metaphor": "hourglass",
+      "element": "minimal hourglass with sand bands",
+      "palette": "terracotta, sand, deep teal",
+      "layout": "tall centered object, title split",
+      "recorded_at": "2026-07-04T12:41:56",
+      "status": "reserved"
+    },
+    {
+      "title": "AI 세컨드 브레인으로 메모를 다시 쓰는 법",
+      "topic": "",
+      "metaphor": "paper boat",
+      "element": "folded blank paper boat on calm waves",
+      "palette": "deep cobalt, cream, copper gold",
+      "layout": "large typography top, object lower half, centered author bottom",
+      "recorded_at": "2026-07-04T20:46:18",
+      "status": "recorded"
+    },
+    {
+      "title": "소상공인을 위한 AI 숏폼 광고 소재 실험 루틴",
+      "topic": "",
+      "metaphor": "studio product test bench",
+      "element": "smartphone tripod with blank product scene and material swatches",
+      "palette": "charcoal navy, cream, copper",
+      "layout": "large typography top, studio objects lower half",
+      "recorded_at": "2026-07-04T20:50:24",
+      "status": "recorded"
+    },
+    {
+      "title": "고객 온보딩을 자동화하는 AI 교육자료 제작 루틴",
+      "topic": "",
+      "metaphor": "premium welcome kit",
+      "element": "blank guide cards, booklet, route map, brass key tag",
+      "palette": "deep forest green, cream, brass gold",
+      "layout": "large typography top, welcome kit lower half",
+      "recorded_at": "2026-07-04T20:53:42",
+      "status": "recorded"
+    },
+    {
+      "title": "프리랜서를 위한 AI 제안서·견적서 작성 시스템",
+      "topic": "프리랜서 제안서 견적서 수주 협상 계약 전환 AI 업무 시스템",
+      "metaphor": "scale balance",
+      "element": "brass balance scale with proposal and quotation documents",
+      "palette": "near-black graphite, warm ivory, brass gold",
+      "layout": "premium hardcover portrait, title top, rendered document object cluster lower half",
+      "recorded_at": "2026-07-05T13:40:35",
+      "status": "recorded"
+    },
+    {
+      "title": "강사를 위한 AI 교육상품 제작 루틴",
+      "topic": "",
+      "metaphor": "speech bubbles",
+      "element": "two interlocking speech bubbles with lecture workbook and product roadmap cards",
+      "palette": "deep midnight navy, cream, coral, gold",
+      "layout": "large title top, layered 3D object cluster center and lower field",
+      "recorded_at": "2026-07-05T22:17:16",
+      "status": "recorded"
+    },
+    {
+      "title": "온라인 판매자를 위한 AI 커머스 운영 자동화",
+      "topic": "온라인 판매자를 위한 AI 커머스 운영 자동화",
+      "metaphor": "signal meter",
+      "element": "simple analog signal meter with commerce operations cards",
+      "palette": "black, yellow, red, gold",
+      "layout": "bold object below title",
+      "recorded_at": "2026-07-06T14:20:43",
+      "status": "recorded"
+    },
+    {
+      "title": "루프 엔지니어링",
+      "topic": "루프 엔지니어링과 자율 AI 에이전트 운영 설계",
+      "metaphor": "compass rose",
+      "element": "hand-drawn compass on grid paper",
+      "palette": "burnt orange, slate, cream",
+      "layout": "corner-anchored object with title band",
+      "recorded_at": "2026-07-13T09:52:27",
+      "status": "recorded"
+    },
+    {
+      "title": "소상공인 AI 활용지원: 실전 설계",
+      "topic": "소상공인 AI 활용지원 실전 설계",
+      "metaphor": "key and lock",
+      "element": "oversized flat key beside keyhole",
+      "palette": "mustard, charcoal, white",
+      "layout": "split-screen vertical halves",
+      "recorded_at": "2026-07-13T10:51:14",
+      "status": "reserved"
+    },
+    {
+      "title": "중소기업 AX 현장훈련: 실전 설계",
+      "topic": "중소기업 팀장이 업무 진단부터 현장 훈련까지 실행하는 전 과정을 설명하는 실무 전자책",
+      "metaphor": "lighthouse beam",
+      "element": "small lighthouse with light cone",
+      "palette": "night navy, beam yellow, white",
+      "layout": "beam crossing title area",
+      "recorded_at": "2026-07-13T11:32:22",
+      "status": "reserved"
+    },
+    {
+      "title": "소상공인 AI 활용지원: 실전 설계",
+      "topic": "1인 사업자와 소상공인이 지원사업 선택과 AI 도입계획 작성하는 전 과정을 설명하고 실제 사례와 작성 서식을 제공하는 실전 가이드",
+      "metaphor": "bridge diagram",
+      "element": "minimal bridge line drawing",
+      "palette": "teal, black, pale gray",
+      "layout": "horizontal axis layout",
+      "recorded_at": "2026-07-13T12:21:15",
+      "status": "reserved"
+    },
+    {
+      "title": "소규모 사업장 안전일터: 실전 설계",
+      "topic": "50인 미만 사업장 관리자가 사고 위험 점검과 지원 신청하는 전 과정을 설명하고 실제 사례와 작성 서식을 제공하는 실용 전자책",
+      "metaphor": "tool tray",
+      "element": "organized desktop tool tray",
+      "palette": "royal blue, white, orange",
+      "layout": "object-led flat lay",
+      "recorded_at": "2026-07-13T12:33:27",
+      "status": "reserved"
+    },
+    {
+      "title": "초고령사회 노인 돌봄 실전 가이드: 치매·거동 불편 부모를 집에서 돌보는 법",
+      "topic": "치매와 거동 불편이 겹친 부모를 집에서 돌보는 가족 보호자를 위한 실전 돌봄 운영 매뉴얼",
+      "metaphor": "ladder of drawers",
+      "element": "open filing drawers ascending",
+      "palette": "olive, cream, brick red",
+      "layout": "stepped diagonal composition",
+      "recorded_at": "2026-07-13T12:49:53",
+      "status": "reserved"
+    },
+    {
+      "title": "일생활균형 우수기업: 실전 설계",
+      "topic": "중소기업 인사총무 담당자가 인증 준비와 제도 증빙 정리하는 전 과정을 설명한다",
+      "metaphor": "sealed document",
+      "element": "document with simple shield seal",
+      "palette": "crimson, cream, graphite",
+      "layout": "premium centered typography",
+      "recorded_at": "2026-07-13T13:02:39",
+      "status": "reserved"
+    },
+    {
+      "title": "중소기업 혁신바우처: 실전 설계",
+      "topic": "제조 소기업 대표가 신청서 여섯 항목과 서비스 조합하는 전 과정을 설명하는 혁신바우처 실전 가이드",
+      "metaphor": "window stack",
+      "element": "overlapping clean app windows",
+      "palette": "purple, mint, black",
+      "layout": "diagonal layered composition",
+      "recorded_at": "2026-07-13T13:38:39",
+      "status": "reserved"
+    },
+    {
+      "title": "생성형 AI 이용자 보호: 실전 설계",
+      "topic": "AI 서비스 기획자가 고지 동의 신고 대응체계 구축하는 전 과정을 설명하는 실전 가이드",
+      "metaphor": "puzzle corner",
+      "element": "two joining puzzle pieces",
+      "palette": "emerald, blush, charcoal",
+      "layout": "corner join with diagonal title",
+      "recorded_at": "2026-07-13T15:14:40",
+      "status": "recorded"
+    },
+    {
+      "title": "협동조합 생애주기 지원: 실전 설계",
+      "topic": "초기 협동조합 운영자가 성장단계 진단과 지원사업 준비하는 전 과정을 설명한다. 실제 사례와 작성 서식을 함께 제공한다.",
+      "metaphor": "seedling pot",
+      "element": "single seedling in numbered pot",
+      "palette": "leaf green, clay, cream",
+      "layout": "small object, oversized typography",
+      "recorded_at": "2026-07-13T15:49:11",
+      "status": "reserved"
+    },
+    {
+      "title": "제조업 탄소중립 바우처: 실전 설계",
+      "topic": "제조업 환경경영 담당자가 탄소진단 자료와 감축과제 설계하는 전 과정을 설명한다",
+      "metaphor": "route map",
+      "element": "route map with three checkpoints",
+      "palette": "forest, sky blue, white",
+      "layout": "map line through open space",
+      "recorded_at": "2026-07-13T15:49:17",
+      "status": "reserved"
+    },
+    {
+      "title": "AI 에이전트는 일하고, 사람은 판단한다",
+      "topic": "사람의 주의력을 보호하는 코딩 에이전트 운영 시스템",
+      "metaphor": "modular blocks",
+      "element": "stacked colored blocks",
+      "palette": "deep green, ivory, orange",
+      "layout": "bottom-weighted editorial grid",
+      "recorded_at": "2026-07-14T19:56:33",
+      "status": "recorded"
+    },
+    {
+      "title": "ChatGPT 5.6 웹디자인 실전",
+      "topic": "기획·생성·검수·배포의 전 과정",
+      "metaphor": "growth ring",
+      "element": "tree growth rings cross-section",
+      "palette": "deep walnut brown, sage, ivory, muted gold",
+      "layout": "full-bleed texture with title plate and layered browser cards",
+      "recorded_at": "2026-07-15T01:29:22",
+      "status": "recorded"
+    },
+    {
+      "title": "영상 제작 자동화의 기술",
+      "topic": "n8n FFmpeg Claude Code 영상 편집 파이프라인",
+      "metaphor": "gear pair",
+      "element": "two meshing flat gears",
+      "palette": "steel blue, rust, ivory",
+      "layout": "mechanical detail upper half",
+      "recorded_at": "2026-07-15T01:44:16",
+      "status": "recorded"
+    },
+    {
+      "title": "Claude 업무 설계 6단계",
+      "topic": "질문에서 자동화와 에이전트까지",
+      "metaphor": "switch panel",
+      "element": "single toggle switch panel",
+      "palette": "deep navy, warm ivory, restrained lime, gold",
+      "layout": "left title block, right layered object",
+      "recorded_at": "2026-07-15T02:26:13",
+      "status": "recorded"
+    },
+    {
+      "title": "AI 엔지니어링 학습의 정석",
+      "topic": "AI 엔지니어링 학습법",
+      "metaphor": "hourglass",
+      "element": "minimal hourglass with sand bands",
+      "palette": "terracotta, sand, deep teal",
+      "layout": "tall centered object, title split",
+      "recorded_at": "2026-07-15T03:05:53",
+      "status": "recorded"
+    },
+    {
+      "title": "카카오 PlayMCP 실전 가이드",
+      "topic": "검색부터 일정·경로·카톡 자동화까지",
+      "metaphor": "paper boat",
+      "element": "folded paper boat with connected tool cards on layered waves",
+      "palette": "deep cobalt navy, ivory, coral, metallic gold",
+      "layout": "title upper third, horizon lower third, central paper boat",
+      "recorded_at": "2026-07-15T03:05:54",
+      "status": "recorded"
+    },
+    {
+      "title": "혼자서도 팀처럼: 헤르메스 에이전트 실전 운영법",
+      "topic": "헤르메스 에이전트 역할·권한·기억·승인 운영",
+      "metaphor": "marked calendar",
+      "element": "desk calendar with one marked day and blank role cards",
+      "palette": "charcoal, warm yellow, cyan",
+      "layout": "large title top, object lower third",
+      "recorded_at": "2026-07-16T17:00:08",
+      "status": "recorded"
+    },
+    {
+      "title": "부서별 Claude Projects 지식베이스 구축 실무",
+      "topic": "Claude Projects 부서별 사내 지식베이스",
+      "metaphor": "speech bubbles",
+      "element": "two interlocking speech bubbles",
+      "palette": "coral, cream, midnight",
+      "layout": "overlapping shapes center field",
+      "recorded_at": "2026-07-19T21:03:29",
+      "status": "recorded"
+    },
+    {
+      "title": "부서별 Claude Projects 지식베이스 구축 실무",
+      "topic": "Claude Projects 부서별 사내 지식베이스 권한 문서 검증 보안 운영",
+      "metaphor": "scale balance",
+      "element": "two-pan balance scale",
+      "palette": "graphite, gold, off-white",
+      "layout": "symmetric composition, title above",
+      "recorded_at": "2026-07-19T21:04:54",
+      "status": "recorded"
+    },
+    {
+      "title": "검색에서 자산으로: Perplexity × Obsidian 리서치 허브 구축법",
+      "topic": "Perplexity와 Obsidian으로 검증 가능한 리서치 허브 구축",
+      "metaphor": "signal meter",
+      "element": "layered analog signal meter with paper cards",
+      "palette": "deep charcoal black, cream, yellow-gold, restrained red",
+      "layout": "large title top, dimensional meter object lower half",
+      "recorded_at": "2026-07-19T21:46:21",
+      "status": "recorded"
+    },
+    {
+      "title": "교실을 바꾸는 AI 맞춤 학습지 자동화",
+      "topic": "초등 맞춤 학습자료 생성·검수·Notion 배포 반자동 워크플로우",
+      "metaphor": "open book path",
+      "element": "open book with road emerging",
+      "palette": "plum, gold, cream",
+      "layout": "surreal object centered",
+      "recorded_at": "2026-07-19T21:55:23",
+      "status": "recorded"
+    },
+    {
+      "title": "AI 도입 전 30가지 질문",
+      "topic": "기업 AI 윤리 저작권 보안 프라이버시 편향 책임성 체크리스트",
+      "metaphor": "key and lock",
+      "element": "oversized sculptural brass key beside layered keyhole gate",
+      "palette": "deep charcoal, mustard brass, cream",
+      "layout": "split-screen vertical halves",
+      "recorded_at": "2026-07-19T22:49:29",
+      "status": "recorded"
+    },
+    {
+      "title": "AI 에이전트로 완성하는 이커머스 상품 설명 A/B 테스트 자동화",
+      "topic": "이커머스 상품 설명 A/B/n 테스트 자동화",
+      "metaphor": "lighthouse beam",
+      "element": "small lighthouse with light cone selecting one of ten product cards",
+      "palette": "night navy, beam yellow, ivory",
+      "layout": "beam crossing layered card fan",
+      "recorded_at": "2026-07-19T22:58:56",
+      "status": "recorded"
+    },
+    {
+      "title": "주제 하나로 완성하는 AI 온라인 강좌 제작 시스템",
+      "topic": "학습목표로 연결한 강의 대본·슬라이드·퀴즈 자동 제작",
+      "metaphor": "bridge diagram",
+      "element": "script, storyboard, quiz를 잇는 3단 플랫폼 브리지",
+      "palette": "deep teal, cream, gold",
+      "layout": "upper title block, lower horizontal bridge-object cluster",
+      "recorded_at": "2026-07-20T09:44:24",
+      "status": "recorded"
+    },
+    {
+      "title": "10분 MVP: 기획자를 위한 Claude Artifacts 프로토타이핑",
+      "topic": "서비스 기획 MVP 프로토타이핑 가설 검증 피드백 루프",
+      "metaphor": "compass rose",
+      "element": "hand-drawn compass on grid paper",
+      "palette": "burnt orange, slate, cream",
+      "layout": "corner-anchored object with title band",
+      "recorded_at": "2026-07-20T10:18:18",
+      "status": "recorded"
+    },
+    {
+      "title": "10분 MVP: 기획자를 위한 Claude Artifacts 프로토타이핑",
+      "topic": "Claude Artifacts로 기획 가설을 프로토타입으로 검증",
+      "metaphor": "tool tray",
+      "element": "organized desktop tool tray",
+      "palette": "deep royal blue, cream, orange, gold",
+      "layout": "object-led flat lay",
+      "recorded_at": "2026-07-20T10:55:15",
+      "status": "recorded"
+    },
+    {
+      "title": "Gemini × Google Sheets 매출 리포트 자동화",
+      "topic": "Gemini API와 Google Sheets로 매출 분석 리포트 자동 발행",
+      "metaphor": "sealed document",
+      "element": "document with simple shield seal",
+      "palette": "crimson, cream, graphite",
+      "layout": "premium centered typography",
+      "recorded_at": "2026-07-20T11:47:14",
+      "status": "recorded"
+    },
+    {
+      "title": "MCP 서버 직접 만들기",
+      "topic": "사내 REST API를 Claude에 연결하는 7일 챌린지",
+      "metaphor": "window stack",
+      "element": "overlapping clean app windows",
+      "palette": "purple, mint, black",
+      "layout": "diagonal layered composition",
+      "recorded_at": "2026-07-20T13:05:11",
+      "status": "recorded"
+    },
+    {
+      "title": "AI가 짠 코드, 어디까지 믿을 것인가",
+      "topic": "AI 생성 코드 보안 신뢰성, CWE 기반 생성, 맥락 검증, 상태 기반 배포 통제",
+      "metaphor": "puzzle corner",
+      "element": "two joining puzzle pieces",
+      "palette": "emerald, blush, charcoal",
+      "layout": "corner join with diagonal title",
+      "recorded_at": "2026-07-30T19:15:21",
+      "status": "recorded"
+    },
+    {
+      "title": "MCP 서버 직접 만들기",
+      "topic": "사내 REST API를 Claude에 연결하는 7일 챌린지",
+      "metaphor": "secure protocol bridge",
+      "element": "three stacked icon-only workflow cards",
+      "palette": "black, mint, violet, white",
+      "layout": "oversized title above centered vertical workflow",
+      "recorded_at": "2026-07-31T01:33:12",
+      "status": "recorded"
+    },
+    {
+      "title": "주제 하나로 완성하는 AI 온라인 강좌 제작 시스템",
+      "topic": "AI로 온라인 강좌 자동 제작: 스크립트·슬라이드·퀴즈 3종 세트 생성",
+      "metaphor": "seedling pot",
+      "element": "하나의 입력 화분에서 대본·슬라이드·퀴즈를 상징하는 세 잎이 자라는 종이 조형물",
+      "palette": "deep forest green, cream, clay, gold",
+      "layout": "oversized upper typography, centered three-leaf paper sculpture, quiet lower byline",
+      "recorded_at": "2026-07-31T02:57:22",
+      "status": "recorded"
+    },
+    {
+      "title": "Gemini × Google Sheets 매출 리포트 자동화",
+      "topic": "검증된 KPI에서 Gemini 해설, 차트, PDF, 주간 메일로 이어지는 매출 자동 발행 시스템",
+      "metaphor": "route map",
+      "element": "route map with three checkpoints",
+      "palette": "forest, sky blue, white",
+      "layout": "map line through open space",
+      "recorded_at": "2026-07-31T03:44:45",
+      "status": "recorded"
+    },
+    {
+      "title": "10분 MVP: 기획자를 위한 Claude Artifacts 프로토타이핑",
+      "topic": "기획자의 코딩 없는 MVP 가설 검증",
+      "metaphor": "growth ring",
+      "element": "layered tree growth rings cross-section",
+      "palette": "deep walnut brown, deep sage, cream, metallic gold",
+      "layout": "full-bleed texture with title plate",
+      "recorded_at": "2026-07-31T05:16:38",
+      "status": "recorded"
+    },
+    {
+      "title": "AI 도입 전 30가지 질문",
+      "topic": "기업 AI 윤리 도입 심사 30문항",
+      "metaphor": "gear pair",
+      "element": "two meshing flat gears",
+      "palette": "steel blue, rust, ivory",
+      "layout": "mechanical detail upper half",
+      "recorded_at": "2026-07-31T06:16:13",
+      "status": "recorded"
+    },
+    {
+      "title": "교실을 바꾸는 AI 맞춤 학습지 자동화",
+      "topic": "초등 맞춤 학습 자료 생성·검수·Notion 배포 워크플로우",
+      "metaphor": "switch panel",
+      "element": "single classroom workflow switch panel",
+      "palette": "deep navy, ivory, lime, gold",
+      "layout": "left title block, right-lower object",
+      "recorded_at": "2026-07-31T07:11:18",
+      "status": "recorded"
+    },
+    {
+      "title": "검색에서 자산으로: Perplexity × Obsidian 리서치 허브 구축법",
+      "topic": "Perplexity와 Obsidian으로 검증 가능한 개인 리서치 허브 구축",
+      "metaphor": "magnifier on page",
+      "element": "magnifying glass over layered archival cards",
+      "palette": "deep ink blue, warm paper white, amber gold",
+      "layout": "large title upper third, dimensional magnifier object lower half",
+      "recorded_at": "2026-07-31T08:15:27",
+      "status": "recorded"
+    },
+    {
+      "title": "부서별 Claude Projects 지식베이스 구축 실무",
+      "topic": "부서별 사내 지식베이스와 정보경계 운영",
+      "metaphor": "paper boat",
+      "element": "folded paper boat crossing five secure department lanes",
+      "palette": "deep cobalt, warm ivory, coral, copper gold",
+      "layout": "horizon line lower third, title-led upper field",
+      "recorded_at": "2026-07-31T08:58:39",
+      "status": "recorded"
+    },
+    {
+      "title": "AI가 짠 코드, 어디까지 믿을 것인가",
+      "topic": "AI 생성 코드 보안 신뢰성 파이프라인",
+      "metaphor": "hourglass",
+      "element": "minimal hourglass with sand bands",
+      "palette": "terracotta, sand, deep teal",
+      "layout": "tall centered object, title split",
+      "recorded_at": "2026-07-31T09:38:56",
+      "status": "recorded"
+    }
+  ]
+}

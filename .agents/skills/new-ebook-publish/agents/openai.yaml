@@ -1,0 +1,6 @@
+interface:
+  display_name: "New Ebook Publish"
+  short_description: "EPUB 출판팀 품질·ISBN·유통 자동화"
+  default_prompt: "Use $new-ebook-publish to create an EPUB-first Korean ebook and run quality, cover, ISBN, and distribution gates."
+policy:
+  allow_implicit_invocation: true

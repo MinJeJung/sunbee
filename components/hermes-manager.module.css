@@ -1,0 +1,77 @@
+.manager {
+  margin: 26px 0 34px;
+  border: 1px solid #cfd8d2;
+  background: #f8faf7;
+  box-shadow: 0 10px 28px rgba(20, 43, 32, 0.06);
+}
+
+.header {
+  min-height: 112px;
+  padding: 24px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid #dce3de;
+  background: #13271f;
+  color: #fff;
+}
+
+.heading { display: flex; align-items: center; gap: 16px; }
+.heading p, .briefingTitle p { margin: 0 0 5px; color: #9cb3a8; font-size: 10px; font-weight: 850; letter-spacing: 0.16em; }
+.heading h2 { margin: 0; font-size: clamp(21px, 2vw, 29px); letter-spacing: -0.045em; }
+.heading div > span { display: block; margin-top: 6px; color: #c2cec8; font-size: 12px; }
+.robot { width: 48px; height: 48px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid #496157; background: #1f3a2f; color: #d5f15d; }
+.health { min-height: 34px; padding: 0 12px; display: inline-flex; align-items: center; gap: 7px; flex: 0 0 auto; border: 1px solid; font-size: 11px; }
+.health.healthy { border-color: #739277; background: #203d30; color: #d5f15d; }
+.health.attention { border-color: #ae8542; background: #4a3820; color: #ffd98c; }
+.health.offline { border-color: #a45656; background: #482828; color: #ffb5b5; }
+
+.signals { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid #dce3de; }
+.signal { min-width: 0; min-height: 145px; padding: 20px; border-right: 1px solid #dce3de; background: #fff; }
+.signal:last-child { border-right: 0; }
+.signal > div { display: flex; align-items: center; gap: 8px; color: #6d7972; }
+.signal > div > span { width: 34px; height: 34px; display: grid; place-items: center; background: #eef2ef; color: #435249; }
+.signal small { font-size: 11px; font-weight: 800; }
+.signal > strong { display: block; margin-top: 16px; overflow: hidden; color: #14251e; font-size: 18px; text-overflow: ellipsis; white-space: nowrap; }
+.signal > p { min-height: 29px; margin: 7px 0 0; overflow: hidden; color: #77827c; display: -webkit-box; font-size: 10px; line-height: 1.45; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.signal.good > div > span { background: #e3f5ea; color: #178653; }
+.signal.warn > div > span { background: #fff0d9; color: #a66b13; }
+
+.briefing { padding: 23px 26px 20px; }
+.briefingTitle { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; }
+.briefingTitle p { color: #74867d; }
+.briefingTitle h3 { margin: 0; color: #14251e; font-size: 18px; }
+.briefingTitle > span { color: #748078; font-size: 10px; font-weight: 750; }
+.briefing ul { margin: 17px 0 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; list-style: none; }
+.briefing li { min-height: 68px; padding: 13px 14px; display: flex; gap: 10px; border: 1px solid #dce3de; background: #fff; }
+.briefing li > span { margin-top: 1px; color: #178653; }
+.briefing li strong { display: block; color: #1c2b24; font-size: 12px; }
+.briefing li p { margin: 4px 0 0; color: #78827d; font-size: 10px; line-height: 1.5; }
+.briefing li.urgent { border-color: #efc2bd; background: #fff8f7; }
+.briefing li.urgent > span { color: #b34035; }
+.briefing li.review { border-color: #d7c68b; background: #fffdf4; }
+.briefing li.review > span { color: #9d7510; }
+.briefing li.observe { border-color: #cfd9e9; background: #f8fbff; }
+.briefing li.observe > span { color: #316dca; }
+.briefing footer { margin-top: 17px; padding-top: 16px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid #dce3de; color: #69766f; font-size: 10px; }
+.briefing footer a { display: inline-flex; align-items: center; gap: 5px; flex: 0 0 auto; color: #143f2f; font-weight: 850; }
+
+@media (max-width: 1080px) {
+  .signals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .signal:nth-child(2) { border-right: 0; }
+  .signal:nth-child(-n + 2) { border-bottom: 1px solid #dce3de; }
+}
+
+@media (max-width: 680px) {
+  .manager { scroll-margin-top: 76px; }
+  .header { padding: 20px; align-items: flex-start; flex-direction: column; }
+  .heading { align-items: flex-start; }
+  .heading div > span { line-height: 1.5; }
+  .signals { grid-template-columns: 1fr; }
+  .signal { min-height: 126px; border-right: 0; border-bottom: 1px solid #dce3de; }
+  .signal:last-child { border-bottom: 0; }
+  .briefing { padding: 20px; }
+  .briefingTitle, .briefing footer { align-items: flex-start; flex-direction: column; }
+  .briefing ul { grid-template-columns: 1fr; }
+}

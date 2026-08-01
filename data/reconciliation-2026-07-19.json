@@ -1,0 +1,27 @@
+{
+  "generatedAt": "2026-07-19T15:40:26+09:00",
+  "scope": "ai",
+  "ai": {
+    "baseProductCount": 242,
+    "pipelineProductCount": 7,
+    "productCount": 249,
+    "workCount": 191
+  },
+  "legacy": {
+    "allTimeKyoboProductCount": 328,
+    "productCount": 83,
+    "workCount": 83,
+    "includedInDefaultMetrics": false
+  },
+  "sources": {
+    "aiCatalog": "data/catalog.json",
+    "operations": "data/state.json",
+    "kyoboAllTimeWorkbook": "/Users/minje/Downloads/1_문서_업무/콘텐츠 보유 현황_전체_2026-07-19.xlsx",
+    "kyoboAllTimeCatalog": "data/kyobo-all-catalog.json"
+  },
+  "rules": [
+    "ISBN",
+    "Kyobo product code",
+    "normalized title and author"
+  ]
+}

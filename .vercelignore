@@ -1,0 +1,12 @@
+.git
+.agents
+.next
+.playwright-cli
+.swc
+.vercel
+__pycache__
+cloud-output
+graphify-out
+node_modules
+*.log
+*.tsbuildinfo
