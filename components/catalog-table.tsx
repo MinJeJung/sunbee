@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, type ReactNode } from "react";
 import { StatusPill } from "@/components/status-pill";
+import { catalogAssetUrl } from "@/lib/catalog-asset-url";
 import { catalogPageSchema, type CatalogPage, type CatalogScope, type CatalogStatusFilter } from "@/lib/dashboard-domain";
 
 const platformNames = ["kyobo", "yes24", "ridi", "aladin", "millie"] as const;
@@ -71,7 +72,7 @@ export function CatalogTable({ initialPage, refreshKey }: { initialPage: Catalog
     <div className="table-wrap" aria-busy={loading}><table className="catalog-table">
       <thead><tr><th>도서</th><th>형식</th><th>가격</th><th>ISBN</th>{platformNames.map((name) => <th key={name}>{platformLabels[name]}</th>)}<th>확인</th><th>파일</th></tr></thead>
       <tbody>{page.items.map((book) => <tr key={book.productId}>
-        <td><div className="book-cell">{book.cover && book.assetId ? <Image alt={`${book.title} 표지`} className="cover-thumb" height={58} src={`/api/library/${encodeURIComponent(book.id)}/asset?kind=cover&thumb=1`} unoptimized width={40} /> : <span className="cover-placeholder" />}<div><Link href={`/library/${encodeURIComponent(book.id)}`}>{book.title}</Link><small>{book.author || "저자 미기재"} · {book.category || "분류 미기재"}</small><small>교보 {book.kyoboSalesProductId || "상품 ID 미확인"}</small></div></div></td>
+        <td><div className="book-cell">{book.cover && book.assetId ? <Image alt={`${book.title} 표지`} className="cover-thumb" height={58} src={catalogAssetUrl(book.id, "cover", true)} unoptimized width={40} /> : <span className="cover-placeholder" />}<div><Link href={`/library/${encodeURIComponent(book.id)}`}>{book.title}</Link><small>{book.author || "저자 미기재"} · {book.category || "분류 미기재"}</small><small>교보 {book.kyoboSalesProductId || "상품 ID 미확인"}</small></div></div></td>
         <td><span className={`format-badge format-${book.fileFormat.toLowerCase()}`}>{book.fileFormat}</span></td>
         <td className="number">{book.price ? `${book.price.toLocaleString("ko-KR")}원` : "-"}</td>
         <td><div className="isbn-cell"><span>{book.activeIsbn || "ISBN 미확인"}</span></div></td>
@@ -90,9 +91,9 @@ export function CatalogTable({ initialPage, refreshKey }: { initialPage: Catalog
 
 function FileActions({ book }: { book: CatalogPage["items"][number] }) {
   return <div className="file-actions">
-    {book.manuscript && book.assetId ? <a aria-label="원고 다운로드" href={`/api/library/${encodeURIComponent(book.id)}/asset?kind=manuscript`}><DownloadSimple size={15} />원고</a> : null}
-    {book.fileFormat === "EPUB" && book.epub && book.assetId ? <a aria-label="EPUB 다운로드" href={`/api/library/${encodeURIComponent(book.id)}/asset?kind=epub`}><DownloadSimple size={15} />EPUB</a> : null}
-    {book.fileFormat === "PDF" && book.pdf && book.assetId ? <a aria-label="PDF 다운로드" href={`/api/library/${encodeURIComponent(book.id)}/asset?kind=pdf`}><DownloadSimple size={15} />PDF</a> : null}
+    {book.manuscript && book.assetId ? <a aria-label="원고 다운로드" href={catalogAssetUrl(book.id, "manuscript")}><DownloadSimple size={15} />원고</a> : null}
+    {book.fileFormat === "EPUB" && book.epub && book.assetId ? <a aria-label="EPUB 다운로드" href={catalogAssetUrl(book.id, "epub")}><DownloadSimple size={15} />EPUB</a> : null}
+    {book.fileFormat === "PDF" && book.pdf && book.assetId ? <a aria-label="PDF 다운로드" href={catalogAssetUrl(book.id, "pdf")}><DownloadSimple size={15} />PDF</a> : null}
   </div>;
 }
 
