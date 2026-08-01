@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { artifactObjectName, cloudArtifactId, parseCloudArtifactId } from "@/lib/cloud-artifact-store";
+import { artifactContentType, artifactObjectName, cloudArtifactId, parseCloudArtifactId } from "@/lib/cloud-artifact-store";
 
 describe("cloud artifact identifiers", () => {
   it("builds stable object names for every review artifact", () => {
@@ -21,6 +21,11 @@ describe("cloud artifact identifiers", () => {
 
     // Then
     expect(parsed).toEqual({ bucket: "sunbee-books", objectName });
+  });
+
+  it("uses the normalized markdown media type required by signed Blob uploads", () => {
+    expect(artifactContentType("manuscript")).toBe("text/markdown");
+    expect(artifactContentType("meta")).toBe("text/markdown");
   });
 
   it("rejects path traversal in an artifact identifier", () => {

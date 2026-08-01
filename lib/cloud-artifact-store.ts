@@ -47,7 +47,7 @@ export function artifactContentType(kind: CloudArtifactKind): string {
     case "cover": return "image/jpeg";
     case "epub": return "application/epub+zip";
     case "manuscript":
-    case "meta": return "text/markdown; charset=utf-8";
+    case "meta": return "text/markdown";
   }
 }
 
